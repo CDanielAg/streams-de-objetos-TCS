@@ -1,8 +1,8 @@
-# Streams de objetos con Node.js
+# StreamLab: streams de objetos con archivos grandes
 
-Ejemplo sencillo del uso de streams en modo objeto. El programa lee una lista de
-productos, descarta los que no tienen existencias, calcula el precio con IGV y
-muestra el resultado en la consola.
+Aplicación web que recibe archivos grandes por streaming. Cada bloque binario se
+transforma en un objeto de JavaScript y se procesa sin conservar el archivo
+completo en memoria.
 
 ## Requisitos
 
@@ -10,21 +10,21 @@ muestra el resultado en la consola.
 
 ## Ejecución
 
-```bash
+~~~bash
 npm start
-```
+~~~
 
-Salida esperada:
+Abre 'http://localhost:4172' y selecciona cualquier archivo. Para apreciar el
+comportamiento se recomienda usar uno de 10 a 30 MB.
 
-```text
-Teclado: S/ 94.40 (incluye IGV)
-Monitor: S/ 767.00 (incluye IGV)
-```
+La aplicación acepta video, audio, ZIP, PDF y cualquier otro tipo de archivo. El
+límite de seguridad del ejemplo es 35 MB.
 
-Para ejecutar la prueba automatizada:
+## Pruebas
 
-```bash
+~~~bash
 npm test
-```
+~~~
 
-El informe de la tarea se encuentra en la carpeta `../docs`.
+El informe navegable se encuentra en '../docs/informe.html' y la explicación
+complementaria en '../docs/informe.md'.
