@@ -1,11 +1,11 @@
 {
   "name": "streams-de-objetos-tcs",
   "version": "1.0.0",
-  "description": "Ejemplo sencillo de streams de objetos con Node.js",
+  "description": "Analizador visual de archivos grandes con streams de objetos",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "node test/productos.test.js"
+    "start": "node src/server.js",
+    "test": "node test/archivo-stream.test.js"
   },
   "engines": {
     "node": ">=18"
